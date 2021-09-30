@@ -1,5 +1,6 @@
-import 'package:cookify/log_in_page.dart';
 import 'package:flutter/material.dart';
+
+import 'home_screen/login_screen/log_in_page.dart';
 
 class Settings extends StatefulWidget {
   const Settings({Key? key}) : super(key: key);

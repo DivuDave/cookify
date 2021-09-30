@@ -1,20 +1,21 @@
-import 'package:cookify/log_in_page.dart';
+
+import 'package:cookify/other/home.dart';
+import 'package:cookify/widgets/custom_button.dart';
+import 'package:cookify/widgets/custom_field.dart';
+import 'package:cookify/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_button.dart';
-import 'custom_field.dart';
-import 'custom_text_button.dart';
-import 'first_page.dart';
-import 'forgot_password.dart';
+import '../account_page.dart';
+import '../forgot_password.dart';
 
-class AccountPage extends StatefulWidget {
-  const AccountPage({Key? key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
-  _AccountPageState createState() => _AccountPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _AccountPageState extends State<AccountPage> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +28,7 @@ class _AccountPageState extends State<AccountPage> {
           ),
           child: Column(
             children: [
-              SizedBox(height: 80),
+              SizedBox(height: 90),
               Icon(
                 Icons.menu_book,
                 color: Colors.deepOrangeAccent[100],
@@ -35,23 +36,18 @@ class _AccountPageState extends State<AccountPage> {
               ),
               SizedBox(height: 10),
               Text(
-                "Create an Account",
+                "Log In",
                 style: TextStyle(
                   color: Colors.deepOrangeAccent[100],
                   fontSize: 27,
                 ),
               ),
-              SizedBox(height: 20),
-              CustomField(
-                hintText: "Name",
-                prefixIcon: Icons.account_box_outlined,
-              ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               CustomField(
                 hintText: "Email Adress",
                 prefixIcon: Icons.email_outlined,
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               CustomField(
                 hintText: "Password",
                 prefixIcon: Icons.lock_outline,
@@ -75,12 +71,12 @@ class _AccountPageState extends State<AccountPage> {
                 ),
               ),
               CustomButton(
-                text: "Create an Account",
+                text: "Log In",
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return LoginPage();
+                        return Home();
                       },
                     ),
                   );
@@ -88,12 +84,12 @@ class _AccountPageState extends State<AccountPage> {
               ),
               SizedBox(height: 10),
               CustomTextButton(
-                text: "I have already an account",
+                text: "I haven't an account",
                 decoration: TextDecoration.underline,
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (BuildContext context) {
-                    return LoginPage();
+                    return AccountPage();
                   }));
                 },
               ),

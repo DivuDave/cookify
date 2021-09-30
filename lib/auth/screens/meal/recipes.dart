@@ -1,5 +1,4 @@
-import 'package:cookify/custom_bar.dart';
-import 'package:cookify/custom_chip.dart';
+import 'package:cookify/widgets/custom_chip.dart';
 import 'package:flutter/material.dart';
 
 class Recipes extends StatefulWidget {

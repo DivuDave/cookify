@@ -1,6 +1,7 @@
-import 'package:cookify/account_page.dart';
-import 'package:cookify/log_in_page.dart';
 import 'package:flutter/material.dart';
+
+import '../../account_page.dart';
+import 'login_screen/log_in_page.dart';
 
 class WelcomePage extends StatelessWidget {
   @override

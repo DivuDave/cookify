@@ -1,5 +1,4 @@
-import 'package:cookify/custom_bar.dart';
-import 'package:cookify/custom_pics.dart';
+import 'package:cookify/widgets/custom_pics.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'dart:ui';
 
-import 'package:cookify/custom_chip_2.dart';
-import 'package:cookify/custom_row.dart';
-import 'package:cookify/poached_egg.dart';
+import 'package:cookify/auth/screens/meal/poached_egg.dart';
+import 'package:cookify/widgets/custom_chip_2.dart';
+import 'package:cookify/widgets/custom_row.dart';
 import 'package:flutter/material.dart';
 
 class MealPlan extends StatefulWidget {

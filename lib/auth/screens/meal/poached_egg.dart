@@ -1,6 +1,7 @@
-import 'package:cookify/custom_actionchip.dart';
-import 'package:cookify/meal_plan.dart';
+import 'package:cookify/widgets/custom_actionchip.dart';
 import 'package:flutter/material.dart';
+
+import 'meal_plan.dart';
 
 class PoachedEgg extends StatefulWidget {
   const PoachedEgg({Key? key}) : super(key: key);

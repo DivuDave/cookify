@@ -1,9 +1,9 @@
-import 'package:cookify/custom_field.dart';
+import 'package:cookify/widgets/custom_button.dart';
+import 'package:cookify/widgets/custom_field.dart';
+import 'package:cookify/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 
 import 'account_page.dart';
-import 'custom_button.dart';
-import 'custom_text_button.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({Key? key}) : super(key: key);

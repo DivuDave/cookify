@@ -1,9 +1,9 @@
-import 'package:cookify/custom_bar.dart';
-import 'package:cookify/recipes.dart';
-import 'package:cookify/settings.dart';
+import 'package:cookify/auth/screens/home_screen/first_page.dart';
+import 'package:cookify/auth/screens/meal/meal_plan.dart';
+import 'package:cookify/auth/screens/meal/recipes.dart';
+import 'package:cookify/auth/screens/settings.dart';
+import 'package:cookify/widgets/custom_bar.dart';
 import 'package:flutter/material.dart';
-import 'first_page.dart';
-import 'meal_plan.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
